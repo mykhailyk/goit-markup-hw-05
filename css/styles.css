@@ -10,6 +10,8 @@
   --second-font-family: 'Raleway', sans-serif;
   --default-font-size: 14px;
   --default-padding: 94px;
+  --default-transition-duration: 250ms;
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -113,6 +115,8 @@ img {
 .contacts-link:focus,
 .contacts-link:hover {
   color: #2196f3;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .contacts-list {
   display: flex;
@@ -177,6 +181,9 @@ img {
 .head-button:hover,
 .head-button:focus {
   background-color: #188ce8;
+    transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
+
 }
 /*----------------body--------------------*/
 .hero-list {
@@ -299,10 +306,16 @@ img {
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--active-btn-color);
+    transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
+
 }
 .team-soc-link:hover .team-soc-icon,
 .team-soc-link:focus .team-soc-icon {
   fill: var(--background-color);
+    transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
+
 }
 .clients-title {
   margin-top: 94px;
@@ -333,6 +346,9 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--active-btn-color);
+    transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
+
 }
 .clients-logo {
   fill: #afb1b8;
@@ -340,6 +356,9 @@ img {
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
   fill: var(--active-btn-color);
+    transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
+
 }
 /*----------------footer--------------------*/
 
@@ -386,6 +405,9 @@ img {
 .adress-link-map:focus,
 .adress-link:focus {
   color: #2196f3;
+    transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
+
 }
 .adress-connect {
   margin-left: 70px;
@@ -426,10 +448,16 @@ img {
 .connect-soc-link:hover,
 .connect-soc-link:focus {
   background-color: var(--active-btn-color);
+    transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
+
 }
 .connect-soc-link:hover .connect-soc-icon,
 .connect-soc-link:focus .connect-soc-icon {
   fill: var(--background-color);
+    transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
+
 }
 
 /*----------------portfolio--------------------*/
@@ -465,6 +493,9 @@ img {
   background-color: var(--active-btn-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+      transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
+
 }
 .portfolio-list {
   display: flex;
@@ -478,6 +509,9 @@ img {
 .portfolio-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+      transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
+
 }
 .portfolio-text-wrapper {
   padding: 20px 24px;
