@@ -103,6 +103,8 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
@@ -127,8 +129,6 @@ img {
 .contacts-link:focus,
 .contacts-link:hover {
   color: #2196f3;
-  transition-duration: var(--default-transition-duration);
-  transition-timing-function: var(--default-transition-timing-function);
 }
 .contacts-list {
   display: flex;
@@ -189,12 +189,12 @@ img {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 30px;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .head-button:hover,
 .head-button:focus {
   background-color: #188ce8;
-  transition-duration: var(--default-transition-duration);
-  transition-timing-function: var(--default-transition-timing-function);
 }
 /*----------------body--------------------*/
 .hero-list {
@@ -326,21 +326,21 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .team-soc-icon {
   fill: #afb1b8;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--active-btn-color);
-  transition-duration: var(--default-transition-duration);
-  transition-timing-function: var(--default-transition-timing-function);
 }
 .team-soc-link:hover .team-soc-icon,
 .team-soc-link:focus .team-soc-icon {
   fill: var(--background-color);
-  transition-duration: var(--default-transition-duration);
-  transition-timing-function: var(--default-transition-timing-function);
 }
 .clients-title {
   margin-top: 94px;
@@ -367,21 +367,21 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--active-btn-color);
-  transition-duration: var(--default-transition-duration);
-  transition-timing-function: var(--default-transition-timing-function);
 }
 .clients-logo {
   fill: #afb1b8;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
   fill: var(--active-btn-color);
-  transition-duration: var(--default-transition-duration);
-  transition-timing-function: var(--default-transition-timing-function);
 }
 /*----------------footer--------------------*/
 
@@ -419,17 +419,19 @@ img {
 }
 .adress-link-map {
   color: inherit;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .adress-link {
   color: rgba(255, 255, 255, 0.6);
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .adress-link-map:hover,
 .adress-link:hover,
 .adress-link-map:focus,
 .adress-link:focus {
   color: #2196f3;
-  transition-duration: var(--default-transition-duration);
-  transition-timing-function: var(--default-transition-timing-function);
 }
 .adress-connect {
   margin-left: 70px;
@@ -463,21 +465,21 @@ img {
   justify-content: center;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .connect-soc-icon {
   fill: #fff;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .connect-soc-link:hover,
 .connect-soc-link:focus {
   background-color: var(--active-btn-color);
-  transition-duration: var(--default-transition-duration);
-  transition-timing-function: var(--default-transition-timing-function);
 }
 .connect-soc-link:hover .connect-soc-icon,
 .connect-soc-link:focus .connect-soc-icon {
   fill: var(--background-color);
-  transition-duration: var(--default-transition-duration);
-  transition-timing-function: var(--default-transition-timing-function);
 }
 
 /*----------------portfolio--------------------*/
@@ -502,6 +504,8 @@ img {
   outline: none;
   cursor: pointer;
   padding: 6px 22px;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .filter-button-current {
   color: var(--alternative-text-color);
@@ -513,8 +517,6 @@ img {
   background-color: var(--active-btn-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-duration: var(--default-transition-duration);
-  transition-timing-function: var(--default-transition-timing-function);
 }
 .portfolio-list {
   display: flex;
@@ -541,7 +543,7 @@ img {
   height: 100%;
   transform: translateY(100%);
   transition: transform var(--default-transition-duration) linear;
- transition-timing-function: var(--default-transition-timing-function);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .portfolio-item:hover .portfolio-description {
   transform: translate(0);
@@ -579,8 +581,8 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
-    transition: opacity var(--default-transition-duration) var(--default-transition-timing-function), visibility var(--default-transition-duration) var(--default-transition-timing-function);
-
+  transition: opacity var(--default-transition-duration) var(--default-transition-timing-function),
+    visibility var(--default-transition-duration) var(--default-transition-timing-function);
 }
 .modal {
   width: 500px;
@@ -592,10 +594,10 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) translateX(0px);
   opacity: 1;
-  transition: transform var(--default-transition-duration) var(--default-transition-timing-function), opacity var(--default-transition-duration) var(--default-transition-timing-function);
-
+  transition: transform var(--default-transition-duration) var(--default-transition-timing-function),
+    opacity var(--default-transition-duration) var(--default-transition-timing-function);
 }
-.backdrop.is-hidden .modal{
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) translateX(-150px);
   opacity: 0;
 }
@@ -615,12 +617,12 @@ img {
   height: 100%;
   align-items: center;
   justify-content: center;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
 }
 .modal-close-icon:hover,
 .modal-close-icon:focus {
   fill: var(--active-btn-color);
-  transition-duration: var(--default-transition-duration);
-  transition-timing-function: var(--default-transition-timing-function);
 }
 .is-hidden {
   visibility: hidden;
